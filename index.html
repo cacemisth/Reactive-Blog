@@ -7,6 +7,9 @@
     body {
       margin: 0;
     }
+    img {
+      padding: 20px 0 0 0;
+    }
     header {
       text-align: center;
       background: url(./bg.jpg);
@@ -24,7 +27,8 @@
     }
     h1 {
       color: white;
-      font-size: 36px;
+      font-size: 70px;
+      margin: 0;
     }
     ul {
       padding: 0;
@@ -39,7 +43,7 @@
       /* padding: 20px; */
     }
     article {
-      width: 500px;
+      max-width: 500px;
       padding: 20px;
       background: rgba(0, 0, 0, 0.5);
       display: block;
@@ -52,6 +56,28 @@
       border-color: red;
       cursor: pointer;
       padding: 2px 4px;
+    }
+    @media (max-width: 500px) {
+      section {
+        background: rgba(0, 5, 49, 0.5);
+        height: 100vh;
+      }
+      h1 {
+        font-size: 20;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+      body {
+        background: url(./bg.jpg);
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+      }
+      header {
+        background: none;
+      }
     }
   </style>
 </head>
